@@ -1,8 +1,7 @@
 // importing http module
 const http = require("http");
-const routes = require("./routes");
 
 // create server
-const server = http.createServer(routes);
+const server = http.createServer();
 
 server.listen(3000);
