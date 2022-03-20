@@ -18,5 +18,8 @@ html(lang="en")
                 
         main
             h1 #{docTitle}
-                each product in prods
-                    p #{product.title}
+                if prods.length > 0
+                    each product in prods
+                        p #{product.title}
+                else 
+                    h1 No Products 
