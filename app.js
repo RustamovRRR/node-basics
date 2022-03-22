@@ -17,7 +17,8 @@ app.use("/admin", adminData.routes);
 app.use(shopRoute);
 
 app.use((req, res, next) => {
-  res.sendFile(path.join(rootDir, "views", "not-found.html"));
+  res.render("404");
+  // res.sendFile(path.join(rootDir, "views", "not-found.html"));
 });
 
 app.listen(3000);
